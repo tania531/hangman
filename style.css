@@ -1,0 +1,14 @@
+/* Styles go here */
+
+#blankWord, #base {
+margin:270px 100px 10px 50px;
+
+}
+
+#figure, #game {
+  border: 1px solid black;
+}
+
+#wrongLetters {
+  margin:40px;
+}

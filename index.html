@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <script data-require="bootstrap@*" data-semver="3.3.2" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="game" class="col-md-6 col-sm-6 col-xs-12">
+        <h3> Words: </h3>
+        <label for="userChoice">User Choice:</label>
+        <input type="text" id="userChoice" />
+        <button type="submit" id="guess">Make Guess</button>
+        <div id="wrongLetters">
+          <h5>Wrong guesses:</h5>
+          <div id="wrongGuesses"></div>
+        </div>
+        <div id="blankWord"></div>
+      </div>
+
+      <div id="figure" class="col-md-6 col-sm-6 col-xs-12">
+        <h3>Scaffold:</h3>
+        <div id="base"></div>
+      </div>
+    </div>
+  </div>
+  <!-- end container -->
+</body>
+
+</html>
