@@ -4,8 +4,8 @@
 <head>
   <script data-require="jquery@*" data-semver="2.1.4" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <link rel="stylesheet" href="style.css" />
-  <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
-  <script data-require="bootstrap@*" data-semver="3.3.2" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <script data-require="bootstrap@*" data-semver="3.3.2" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <script src="script.js"></script>
 </head>
@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div class="row">
-      <div id="game" class="col-md-6 col-sm-6 col-xs-12">
+      <div id="game" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <h3> Words: </h3>
         <label for="userChoice">User Choice:</label>
         <input type="text" id="userChoice" />
@@ -22,12 +22,13 @@
           <h5>Wrong guesses:</h5>
           <div id="wrongGuesses"></div>
         </div>
-        <div id="blankWord"></div>
+        <div id="blankWord">current result: </div>
+        <div id="win">win: </div>
       </div>
 
-      <div id="figure" class="col-md-6 col-sm-6 col-xs-12">
+      <div id="figure" class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <h3>Scaffold:</h3>
-        <div id="base"></div>
+        <div id="base"> total wrong guesses: </div>
       </div>
     </div>
   </div>
