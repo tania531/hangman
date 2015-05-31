@@ -13,12 +13,11 @@ $(document).ready(function(){
     }
     $("#guess").click(function(){
       ug = $ch.val();
-      console.log('ug: ', ug);
       if(word.indexOf(ug) === -1){
-        alert('wrong');
         wrongGuesses.push(ug);
+        $("#wrongGuesses").html(wrongGuesses);
+        misses++;
       } else {
-        alert('right');
         for(var i = 0; i < word.length; i++){
           if(ug === word[i]){
             result[i] = ug;
@@ -26,12 +25,10 @@ $(document).ready(function(){
         }
       }
 
-
-      $("#blankWord").html(result);
+      $("#blankWord").html("Current Result: " + result);
       // return result;
       $ch.val('');
     }); // end click
-    $("#blankWord").html(result);
     $("#wrongGuesses").append(wrongGuesses);
     $("#figure").append('Misses: ' + misses);
   }
