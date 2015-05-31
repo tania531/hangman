@@ -10,6 +10,7 @@ $(document).ready(function(){
     for(var i = 0; i < word.length; i++){
       $("#blankWord").append(" _ ");
       $("#base").append("___");
+      result[i] = ' _ ';
     }
     $("#guess").click(function(){
       ug = $ch.val();
